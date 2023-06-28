@@ -3,6 +3,7 @@ import Home from "./Home";
 import IndevSend from "./IndevSend";
 import SendToList from "./SendToList";
 import SendToAll from "./SendToAll";
+import AddCustomer from "./AddCustomer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/IndevSend" element={<IndevSend />} />
         <Route path="/SendToList" element={<SendToList/>} />
         <Route path="/SendToAll" element={<SendToAll/>} />
+        <Route path="/AddCustomer" element={<AddCustomer/>} />
       </Routes>
       </BrowserRouter>
     </div>
