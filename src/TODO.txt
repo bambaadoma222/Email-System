@@ -1,0 +1,1 @@
+Assign the options in RemoveFromCustomer.jsx according to existing mySQL DB 

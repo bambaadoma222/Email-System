@@ -16,6 +16,7 @@ export default function Home() {
           <button style={{ marginTop: "20px" }} onClick={()=> navigate("/SendToList")}>לשלוח לרשימה</button>
           <button style={{ marginTop: "20px" }} onClick={()=> navigate("/SendToAll")}>לשלוח לכולם</button>
           <button style={{ marginTop: "20px" }} onClick={()=> navigate("/AddCustomer")}>להוסיף לרשימה</button>
+          <button style={{ marginTop: "20px" }} onClick={()=> navigate("/DeleteCustomer")}>הסר לקוח</button>
         </div>
       </>
     );
