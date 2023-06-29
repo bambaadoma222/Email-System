@@ -1,8 +1,9 @@
 import React from "react";
 import "./css/IndevSend.css";
-
+import { useNavigate } from "react-router-dom";
 
 export default function IndevSend() {
+    const navigate = useNavigate();
     //heading 
     return ( 
         <>
@@ -15,6 +16,7 @@ export default function IndevSend() {
         </div>
         <div className="button-container">
             <button style={{marginTop: "25px"}}>שלחי</button>
+            <button style={{marginTop:"45px"}} onClick={()=> navigate("/")}>חזרה לתפריט הראשי</button>
         </div>
         </>
     );

@@ -1,10 +1,11 @@
 import React from "react";
 import './CSS/SendToList.css';
+import { useNavigate } from "react-router-dom";
 
 
 
 export default function SendToList() {
-
+    const navigate = useNavigate();
     return (
     <>
         <div>
@@ -17,6 +18,7 @@ export default function SendToList() {
         <div className="button-container">
             <button style={{marginTop: "35px"}}>הוסיפי לרשימה</button>
             <button style={{marginTop: "20px"}}> שליחה</button>
+            <button style={{marginTop:"45px"}} onClick={()=> navigate("/")}>חזרה לתפריט הראשי</button>
         </div>
     </>
     ); 

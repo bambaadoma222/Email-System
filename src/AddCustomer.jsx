@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function AddCustomer() {
-
+    const navigate = useNavigate();
     return (
         <>
         <div className="Heading">
@@ -19,6 +21,7 @@ export default function AddCustomer() {
     
         <div className="button-container">
             <button style={{marginTop:"30px"}}>הוספה</button>
+            <button style={{marginTop:"45px"}} onClick={()=> navigate("/")}>חזרה לתפריט הראשי</button>
         </div>
         </>
     ); 
